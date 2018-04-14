@@ -4,7 +4,7 @@ import React from 'react';
 import loadingAnimation from 'assets/loading.gif';
 
 const Loading = () => (
-    <div className="Loading-gif">
+    <div className="ltdmvr-loading">
         <img src={loadingAnimation} alt="loading" />
     </div>
 );

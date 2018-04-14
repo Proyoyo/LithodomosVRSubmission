@@ -49,10 +49,10 @@ export default class AllExperiences extends Component<Props> {
 
     render() {
         return (
-            <div className="Main-body">
+            <div className="ltdmvr-main-wrapper">
                 <Header/>
-                <h1 className="title">Experience Library</h1>
-                <div className="Experience-container">
+                <h1 className="ltdmvr-main-title">Experience Library</h1>
+                <div className="ltdmvr-content-wrapper">
                     {this.cachedContent}
                     <Query query={ALL_EXPERIENCES} variables={{limit, skip}}>
                         {({ loading, error, data }) => {

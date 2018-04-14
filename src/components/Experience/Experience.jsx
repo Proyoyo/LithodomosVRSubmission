@@ -19,10 +19,10 @@ export default class Experience extends Component<Props> {
         var experienceName = this.props.name;
         if(this.props.isScene) {
             return (
-                <div className="Experience-wrapper">
-                    <div className="Experience" style={{ backgroundImage: `url(${imageUrl})`}}>
-                        <div className="Experience-content">
-                            <div className="Experience-text">
+                <div className="exp-item">
+                    <div className="exp-wrapper" style={{ backgroundImage: `url(${imageUrl})`}}>
+                        <div className="exp-content">
+                            <div className="exp-desc">
                                 <div>{this.props.name}</div>
                                 <div>{this.props.tagline}</div>
                             </div>
@@ -32,14 +32,14 @@ export default class Experience extends Component<Props> {
             );
         }
         return (
-            <div className="Experience-wrapper">
+            <div className="exp-item">
                 <Link to={{
                         pathname: '/experiences/' + this.props.id,
                         state: {experienceId, experienceName}
                         }}>
-                    <div className="Experience" style={{ backgroundImage: `url(${imageUrl})`}}>
-                        <div className="Experience-content">
-                            <div className="Experience-text">
+                    <div className="exp-wrapper" style={{ backgroundImage: `url(${imageUrl})`}}>
+                        <div className="exp-content">
+                            <div className="exp-desc">
                                 <div>{this.props.name}</div>
                                 <div>{this.props.tagline}</div>
                             </div>

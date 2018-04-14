@@ -1,48 +1,45 @@
-.Experience-wrapper {
+.exp-item {
     position: relative;
     margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-@media screen and (min-width: 768px) {
-    .Experience-wrapper {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-.Experience {
+.exp-wrapper {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 180px;
 }
 
+.exp-content {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 220px;
+}
+
+.exp-desc {
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+}
+
 @media screen and (min-width: 768px) {
-    .Experience-wrapper {
+    .exp-item {
         width: 33.33%;
         float: left;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .Experience-wrapper {
+    .exp-item {
         width: 100%;
     }
 
-    .Experience {
+    .exp-wrapper {
         max-width: 320px;
         margin-left: auto;
         margin-right: auto;
     }
 }
-    .Experience-content {
-        position: absolute;
-        bottom: 0;
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-
-    .Experience-text {
-        padding: 10px;
-        font-size: 14px;
-        color: black;
-    }

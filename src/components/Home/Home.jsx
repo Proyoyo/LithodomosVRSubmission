@@ -29,19 +29,19 @@ export default class Home extends Component<Props> {
 
     render() {
         return (
-            <div className="Main-body">
+            <div className="ltdmvr-main-wrapper">
                 <Header/>
-                <h1 className="title">Featured Experiences</h1>
-                <div className="Experience-container">
+                <h1 className="ltdmvr-main-title">Featured Experiences</h1>
+                <div className="ltdmvr-content-wrapper">
                     <Query query={FEATURED_EXPERIENCES}>
                         {({ loading, error, data }) => {
                             if (loading) {
                                 return (
                                     <div>
                                         <Loading/>
-                                        <div className="View-experiences">
-                                            <Link to='experiences'>
-                                                <div className="Experiences-button">View all experiences</div>
+                                        <div className="view-all-exp">
+                                            <Link to='/experiences'>
+                                                <div className="ltdmvr-exp-btn">View all experiences</div>
                                             </Link>
                                         </div>
                                     </div>
@@ -55,12 +55,12 @@ export default class Home extends Component<Props> {
                                     {data.experiences.map(({ id, name, tagline, imageMedium }) => (
                                         <Experience key={id} id={id} name={name} tagline={tagline} image={imageMedium.file}/>
                                     ))}
-                                    <div className="View-experiences">
+                                    <div className="view-all-exp">
                                         <Link to={{
                                             pathname: '/experiences',
                                             state: {data}
                                             }}>
-                                            <div className="Experiences-button">View all experiences</div>
+                                            <div className="ltdmvr-exp-btn">View all experiences</div>
                                         </Link>
                                     </div>
                                 </div>

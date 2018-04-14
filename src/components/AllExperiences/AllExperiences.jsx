@@ -36,7 +36,7 @@ export default class AllExperiences extends Component<Props> {
     constructor(props: Object) {
         super(props);
         this.cachedContent = <div/>;
-        if(typeof this.props.location.state !== "undefined") {
+        if(typeof(this.props.location.state) !== "undefined") {
             limit = 15;
             skip = 3;
             this.cachedContent = (
@@ -44,6 +44,9 @@ export default class AllExperiences extends Component<Props> {
                     <Experience key={id} id={id} name={name} tagline={tagline} image={imageMedium.file}/>
                 ))
             );
+        } else {
+            limit = 18;
+            skip = 0;
         }
     }
 

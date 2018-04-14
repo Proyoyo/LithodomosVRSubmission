@@ -1,0 +1,125 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.Main-body:before,
+.Main-body:after,
+.Experience-container:before,
+.Experience-container:after {
+    display: table;
+    content: "";
+}
+
+.Main-body:after,
+.Experience-container:after {
+    clear: both;
+}
+
+.Main-body {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .Main-body {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .Main-body {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .Main-body {
+    width: 1170px;
+  }
+}
+
+.App-header {
+    max-width: 250px;
+    margin: 20px auto;
+}
+
+.Loading-gif {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.Experience-description {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    max-width: 50%;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.Experience-container {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.View-experiences {
+    text-align: center;
+}
+
+.Back-experiences {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.Experiences-button {
+    background-color: white;
+    border: none;
+    color: black;
+    border: 2px solid #008CBA;
+    border-radius: 6px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.Experiences-button:hover {
+    background-color: #008CBA;
+    color: white;
+}

@@ -1,0 +1,48 @@
+.Experience-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .Experience-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.Experience {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 180px;
+}
+
+@media screen and (min-width: 768px) {
+    .Experience-wrapper {
+        width: 33.33%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Experience-wrapper {
+        width: 100%;
+    }
+
+    .Experience {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+    .Experience-content {
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .Experience-text {
+        padding: 10px;
+        font-size: 14px;
+        color: black;
+    }
